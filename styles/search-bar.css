@@ -1,0 +1,48 @@
+.search-input img {
+   position: absolute;
+   top: 0.2rem;
+   left: 1rem;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input input {
+    background-color: #E5E4E2;
+    border: none;
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    padding-left: 3rem;
+}
+
+.circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #E5E4E2 ;
+    border-radius: 50px;
+}
+
+.circle img {
+    width: 60%; 
+    position: relative;
+    top: 8px;
+    left: 7px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.search-btn {
+    background-color: #3D8D7A;
+    color: white;
+    padding-bottom: .6rem;
+    padding-top: .6rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    border-radius: 50px;
+}

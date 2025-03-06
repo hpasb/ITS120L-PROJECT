@@ -1,0 +1,123 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.5rem;
+    width: 60%;
+    column-gap: 2rem;
+    height: 90%;
+}
+
+.pet-info {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+    background-color: #c5ddd7;
+    border-radius: 20px;
+    padding: 2rem
+}
+
+.health-info {
+    grid-column: 3 / span 4;
+    grid-row: 1;
+    background-color: #c5ddd7;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.adoption-info {
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 4;
+    background-color: #c5ddd7;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.pet-info .pet-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.pet-info .pet-img img {
+    height: 9rem;
+    width: 9rem;
+    border: 0.6rem solid #3D8D7A;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.name p {
+    font-size: small;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.basic-info p:not(:first-child){
+    padding-left: 1rem;
+}
+
+.basic-info p {
+    margin-bottom: 0.8rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.basic-info {
+    background-color: #3D8D7A;
+    border-radius: 20px;
+    color: white;
+    padding: .7rem;;
+}
+
+.btn button {
+    background-color: #c5ddd7;
+    color: white;
+    font-weight: 600;
+    width: 60%;
+    padding: 0.9rem;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.btn button:active {
+    background-color: #3D8D7A;
+}
+
+.health-info p, ul li{
+    margin-bottom: 0.5rem;
+}
+
+.health-info p:not(:first-child), ul li {
+    padding-left: 1rem;
+}
+
+.adoption-info p, ul li {
+    margin-bottom: 0.5rem;
+}
+
+.adoption-info p:not(:first-child), ul li {
+    padding-left: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    position: fixed;
+    top: 6rem;
+    left: 8rem;
+}

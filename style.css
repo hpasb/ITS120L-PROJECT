@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.left-container{
+    background-color: white;
+    grid-column: 1 / span 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left-container h1 {
+    text-align: center;
+    color: #242124;
+    margin-bottom: 20px;
+}
+
+.signin-container {
+    width: 60%;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-container img {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
+.input-container input {
+    padding: 25px;
+    padding-left: 40px;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 20px;
+    background-color: #E5E4E2;
+    border: none;
+    border-radius: 10px;
+}
+
+.right-container {
+    background-color: #3D8D7A;
+    grid-column: 9 / span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container h1, p {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.right-container p {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.right-container h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.right-container button {
+    background-color: #3D8D7A;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+
+.right-container button:active {
+    background-color: #56c4aa;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-wrapper button{
+    background-color: #3D8D7A;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    border: none;
+    border-radius: 50px;
+}
+
+.flex-wrapper button:active{
+    background-color: #56c4aa;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    border: none;
+    border-radius: 50px;
+}

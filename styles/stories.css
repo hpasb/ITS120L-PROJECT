@@ -1,0 +1,17 @@
+.container img {
+    height: 150px;
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.container .story-container {
+    background-color: #A3D1C6;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;;
+}

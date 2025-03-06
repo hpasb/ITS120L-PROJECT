@@ -1,0 +1,24 @@
+.title {
+    height: 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pet-img {
+    height: 10rem;
+    background-color: #A3D1C6;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story {
+    text-align: center;
+}
+
+.pet-img img {
+    height: 8rem;
+    width: 8rem;
+}

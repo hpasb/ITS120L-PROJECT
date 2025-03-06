@@ -1,0 +1,51 @@
+.user-info {
+    display: flex;
+    gap: 4rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.user-info img {
+    height: 7rem;
+    width: 7rem;
+}
+
+.user-info p {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.green {
+    color: #3D8D7A;
+    font-weight: 700;
+}
+
+.inline img {
+    height: 15px;
+    width: 15px;
+}
+
+.inline {
+    display: flex;
+    gap: 5px;
+}
+
+.contact-info {
+    background-color: #c5ddd7;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.back {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 6rem;
+    left: 8rem;
+}
+

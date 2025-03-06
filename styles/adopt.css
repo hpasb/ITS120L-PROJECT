@@ -1,0 +1,41 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-desc {
+    text-align: center;
+}
+
+.card-img {
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.card-img img {
+    height: rem;
+    width: 3rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.side-nav {
+    display: fixed;
+    top: 0;
+    left: 5rem;
+}
