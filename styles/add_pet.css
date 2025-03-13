@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.add-user-container {
+    background: #fff;
+    padding: 20px;
+    padding-right: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-top: 30rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    background: #fff;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #3D8D7A;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2e6c5d;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background-color: #999;
+}
+
+.error-message {
+    color: #d9534f;
+    background: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: #28a745;
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .add-user-container {
+        width: 90%;
+    }
+}

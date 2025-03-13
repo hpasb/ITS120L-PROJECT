@@ -19,7 +19,7 @@ $(document).ready(function() {
     })
 
     $(".signup").click(function () {
-        window.location.href="./pages/signup.html"
+        window.location.href="./pages/signup.php"
     })
 
     ;

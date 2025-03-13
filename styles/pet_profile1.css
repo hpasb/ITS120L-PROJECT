@@ -1,0 +1,52 @@
+/* General Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pet-info, .health-info, .adoption-info {
+    background-color: #c5ddd7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pet-info {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.pet-img img {
+    height: 8rem;
+    width: 8rem;
+    border: 0.5rem solid #3D8D7A;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Adjustments for better spacing */
+.basic-info p, .health-info p, .adoption-info p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .pet-info {
+        grid-column: span 1;
+    }
+}

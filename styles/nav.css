@@ -19,18 +19,17 @@
     grid-row: 1 / span 12;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-
+    height: 100%;
 }
 
 .sidebar h1 {
     color: white;
     font-size: 20px;
     rotate: -90deg;
-
+    margin-top: 240px;
 }
 
 .topbar {
@@ -38,25 +37,66 @@
     grid-column: 2 / span 18;
     grid-row: 1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     border-bottom: 1px solid black;
+}
+
+.topbar .logo-container h2{
+    margin-right: 600px;
+}
+
+/* Fixes Logo and Title Alignment */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.topbar .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.topbar .user p {
+    font-weight: 650;
+}
+
+.user-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
 }
 
 .main {
     background-color: white;
     grid-column: 2 / span 18;
     grid-row: 2 / span 12;
-}
-
-.sidebar .icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 2rem;
+    overflow-y: scroll;
 }
 
 .side-nav {
@@ -64,7 +104,7 @@
     position: fixed;
     height: 100vh;
     width: 12rem;
-    left: 5.5rem;
+    left: 4.4rem;
     opacity: 80%;
     display: none;
     flex-direction: column;
@@ -83,27 +123,7 @@
     font-size: 20px;
 }
 
-.topbar img {
-    width: 60px;
-    height: 60px;
-}
-
-.topbar .user{
-    display: flex;
-    align-items: center;
-}
-
-.topbar .user p {
-    font-weight: 600;
-}
-
-.main {
-    padding: 2rem;
-    overflow-y: scroll;
-}
-
 .side-nav li a {
     text-decoration: none;
     color: white;
 }
-

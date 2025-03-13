@@ -1,0 +1,262 @@
+/* Modern Playful Design */
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFDFD;
+    color: #333;
+}
+
+.main {
+    background-color: white;
+    grid-column: 2 / span 18;
+    grid-row: 2 / span 12;
+    padding: 3rem;
+    overflow-y: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Content Box Styling */
+.content-container {
+    background: #FFF;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-container:hover {
+    transform: scale(1.02);
+}
+
+.content-container h1 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #2E8B57;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-container h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    color: #3D8D7A;
+    text-align: left;
+}
+
+.content-container p,
+.content-container ul,
+.content-container ol {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content-container ul,
+.content-container ol {
+    padding-left: 25px;
+}
+
+.content-container li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Fun Icons & Elements */
+.content-container ul li::before {
+    content: '\2728'; /* Sparkles Emoji */
+    color: #FFB400;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 1.5rem;
+    }
+    .content-container {
+        padding: 1.5rem;
+    }
+    .content-container h1 {
+        font-size: 2rem;
+    }
+    .content-container h2 {
+        font-size: 1.4rem;
+    }
+    .content-container p,
+    .content-container ul,
+    .content-container ol {
+        font-size: 1rem;
+    }
+}
+
+        /* Chatbot Styling */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chatbot-button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .chatbot-modal {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .chatbot-header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .chatbot-content {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .chatbot-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .chatbot-input button {
+            margin-left: 10px;
+            padding: 8px;
+            background-color: #2E8B57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+/* Chatbot Styling */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbot-button {
+    background-color: #2E8B57;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-modal {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.chatbot-header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chatbot-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-input button {
+    margin-left: 10px;
+    padding: 8px;
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* User Message Styling */
+.chatbot-content .user-message {
+    text-align: right;
+    color: #2E8B57; /* Change to any color you'd like for the user */
+    margin: 10px 0;
+}
+
+.chatbot-content .bot-message {
+    text-align: left;
+    color: #444; /* Change this color for chatbot replies */
+    margin: 10px 0;
+}
